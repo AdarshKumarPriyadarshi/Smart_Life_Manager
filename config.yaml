@@ -1,0 +1,3 @@
+app:
+  debug: true
+database: "smart_life_manager.db"
