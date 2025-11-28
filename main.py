@@ -1,3 +1,4 @@
+from fastapi.middleware.cors import CORSMiddleware
 import logging
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -22,6 +23,13 @@ notes_mgr = NotesManager(db)
 reminder_mgr = ReminderManager(db)
 weather_mgr = WeatherManager(db)
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+    )
 
 class Task(BaseModel):
     title: str
