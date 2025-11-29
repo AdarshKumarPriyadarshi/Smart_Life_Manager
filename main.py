@@ -35,7 +35,7 @@ class Task(BaseModel):
     title: str
     description: str
     due_date: str
-    priority: int
+    priority: int = 1
 
 class Note(BaseModel):
     content: str
