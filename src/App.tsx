@@ -9,6 +9,7 @@ import Tasks from "./pages/Tasks";
 import Notes from "./pages/Notes";
 import Reminders from "./pages/Reminders";
 import Weather from "./pages/Weather";
+import Sara from "./pages/Sara";
 import ClearReset from "./pages/ClearReset";
 import NotFound from "./pages/NotFound";
 
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/reminders" element={<Reminders />} />
             <Route path="/weather" element={<Weather />} />
             <Route path="/clear-reset" element={<ClearReset />} />
+            <Route path="/sara" element={<Sara />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

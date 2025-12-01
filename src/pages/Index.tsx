@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckSquare, FileText, Bell, Cloud, Trash2, ArrowRight } from 'lucide-react';
+import { CheckSquare, FileText, Bell, Cloud, Trash2, Bot, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 
@@ -31,6 +31,13 @@ const features = [
     icon: Cloud,
     color: 'from-warning to-warning/70',
     path: '/weather',
+  },
+  {
+    title: 'Sara',
+    description: 'AI Virtual Assistant - Coming Soon',
+    icon: Bot, // ← ADD THIS IMPORT AT TOP
+    color: 'from-indigo-500 to-purple-600',
+    path: '/sara',
   },
 ];
 

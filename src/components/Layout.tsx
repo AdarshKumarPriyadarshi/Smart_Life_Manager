@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, CheckSquare, FileText, Bell, Cloud, Trash2 } from 'lucide-react';
+import { Menu, X, Home, CheckSquare, FileText, Bell, Cloud, Trash2, Bot } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navItems = [
@@ -9,7 +9,9 @@ const navItems = [
   { path: '/notes', label: 'Notes', icon: FileText },
   { path: '/reminders', label: 'Reminders', icon: Bell },
   { path: '/weather', label: 'Weather', icon: Cloud },
+  { label: "Sara", path: "/sara", icon: Bot },
   { path: '/clear-reset', label: 'Clear/Reset', icon: Trash2 },
+  
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
