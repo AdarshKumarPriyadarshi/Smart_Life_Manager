@@ -34,7 +34,7 @@ const features = [
   },
   {
     title: 'Sara',
-    description: 'AI Virtual Assistant - Coming Soon',
+    description: 'AI Virtual Assistant',
     icon: Bot, // ← ADD THIS IMPORT AT TOP
     color: 'from-indigo-500 to-purple-600',
     path: '/sara',
